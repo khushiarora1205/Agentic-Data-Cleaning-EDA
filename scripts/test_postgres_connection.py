@@ -6,11 +6,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- CONNECTION DETAILS ---
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "demoDb"     # Connecting to your existing database
-DB_USER = "apple"      # Your Mac username 
-DB_PASSWORD = "admin" 
+DB_HOST = "your_database_host"      
+DB_PORT = "your_database_port"     
+DB_NAME = "your_database_name" 
+DB_USER = "your_database_user"    
+DB_PASSWORD = "your_database_password"
 
 try:
     print(f"🔌 Attempting to connect to '{DB_NAME}' as '{DB_USER}'...")
