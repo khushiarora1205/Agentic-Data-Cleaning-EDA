@@ -67,7 +67,7 @@ if df_db is not None:
 
 ### === 4️⃣ Fetch and Clean API Data === ###
 # ✅ Fetch API Data
-API_URL = "https://jsonplaceholder.typicode.com/posts"
+API_URL = " "
 df_api = ingestion.fetch_from_api(API_URL)
 
 if df_api is not None:
