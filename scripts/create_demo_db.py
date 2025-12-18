@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-DB_USER = "apple"
-DB_PASSWORD = "admin"  # The password you set earlier
-DB_HOST = "localhost"
-NEW_DB_NAME = "demoDb"
+DB_USER = "your_database_username"
+DB_PASSWORD = "your_database_password"  
+DB_HOST = "your_database_host"
+NEW_DB_NAME = "your_database_name"
 
 def create_database():
     """Creates the demoDb database if it doesn't exist."""
@@ -42,7 +42,6 @@ def create_database():
 def create_table_and_data():
     """Connects to demoDb, creates my_table, and inserts data."""
     try:
-        # Connect to the NEW database
         con = psycopg2.connect(
             dbname=NEW_DB_NAME, 
             user=DB_USER, 
